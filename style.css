@@ -4,6 +4,9 @@
 }
 
 h1{
+    display: block;
+    top: 100px;
+position: absolute;
 text-transform: uppercase;
 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -50,6 +53,14 @@ body{
     border-color: lightblue;
 }
 
-/* .resetBtn{
+ .resetBtn{
+    border-radius: 200px;
+    display: block;
+    position: absolute;
     background-color: red;
-} */
+    bottom: 30px;
+    left: 650px;
+} 
+.resetBtn:hover {
+    border-color: yellow;
+}
