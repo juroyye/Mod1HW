@@ -24,14 +24,15 @@ class LordScarr {
 
 
 // specifies the button and links it to js
-const option1 = document.getElementById("btn1");
-const option2 = document.getElementById("btn2");
-const option3 = document.getElementById("btn3");
-const option4 = document.getElementById("btn4");
+let option1 = document.getElementById("btn1");
+let option2 = document.getElementById("btn2");
+let option3 = document.getElementById("btn3");
+let option4 = document.getElementById("btn4");
 
 
+// this is the beginning button that allows you to start 
 
-function viewAst() {     
+function acceptMission() {     
     
     
   option1.addEventListener('click', () => {       
@@ -49,7 +50,7 @@ function viewAst() {
 
  
      // alter the buttons
-     document.getElementById("btn1").innerHTML = 
+     document.getElementById("btn3").innerHTML = 
      `Enter and hide in a nearby asteroid 
      field until the enemy forces pass`
 
@@ -57,8 +58,64 @@ function viewAst() {
      `Attempt to fly across open space to a hypergate and 
      risk being captured`
    
+     document.getElementById("btn1").innerHTML = 
+     ``
+   
      
 });}
+acceptMission();
 
 
+// this button will allow you to select the asteroid option
+
+
+function viewAst() {     
+    
+    
+    option3.addEventListener('click', () => {       
+      
+      
+      // alter the master text
+       document.getElementById("masterText").innerHTML = 
+  
+       `The asteroids`;
+  
+   
+       // alter the buttons
+       document.getElementById("btn1").innerHTML = 
+       `Enter the black hole`
+  
+       document.getElementById("btn2").innerHTML = 
+       `Send an SOS Signal and wait`
+     
+       
+  });}
 viewAst();
+  
+
+// this button will allow you to select the hypergate option
+  function viewHypergate() {     
+    
+    
+    option2.addEventListener('click', () => {       
+      
+      
+      // alter the master text
+       document.getElementById("masterText").innerHTML = 
+  
+       `You pull back the throttle, accelerating amongst the
+       stars. Lord Scarr and his troops are firing laser 
+       bolts, barely grazing your wings. You make it into 
+       the hypergate and accelerate to the next solar system.`;
+  
+   
+       // alter the buttons
+       document.getElementById("btn1").innerHTML = 
+       `Fly towards the closest planet present`
+  
+       document.getElementById("btn2").innerHTML = 
+       `Send out an SOS to your team and wait`
+     
+       
+  });}
+ viewHypergate();
