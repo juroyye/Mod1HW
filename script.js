@@ -74,6 +74,8 @@ let option16 = document.getElementById("btn16");
 //option17 goes into the stand ground option
 let option17 = document.getElementById("btn17");
 
+let option18 = document.getElementById("resetBtn");
+
 
 // option2.style.display = 'none';
 // option3.style.display = 'none';
@@ -92,7 +94,24 @@ let option17 = document.getElementById("btn17");
 // option16.style.display = 'none';
 // option17.style.display = 'none';
 
-
+if(100 == 100) {
+option2.style.display = 'none';
+option3.style.display = 'none';
+option4.style.display = 'none';
+option5.style.display = 'none';
+option6.style.display = 'none';
+option7.style.display = 'none';
+option8.style.display = 'none';
+option9.style.display = 'none';
+option10.style.display = 'none';
+option11.style.display = 'none';
+option12.style.display = 'none';
+option13.style.display = 'none';
+option14.style.display = 'none';
+option15.style.display = 'none';
+option16.style.display = 'none';
+option17.style.display = 'none';
+}
 
 // this is the beginning button that allows you to start 
 
@@ -125,21 +144,25 @@ function acceptMission() {
      `Attempt to hide in nearby asteroid field`
 
 
+// option1.style.display = 'none';
+// option4.style.display = 'none';
+// option5.style.display = 'none';
+// option6.style.display = 'none';
+// option7.style.display = 'none';
+// option8.style.display = 'none';
+// option9.style.display = 'none';
+// option10.style.display = 'none';
+// option11.style.display = 'none';
+// option12.style.display = 'none';
+// option13.style.display = 'none';
+// option14.style.display = 'none';
+// option15.style.display = 'none';
+// option16.style.display = 'none';
+// option17.style.display = 'none';
+
 option1.style.display = 'none';
-option4.style.display = 'none';
-option5.style.display = 'none';
-option6.style.display = 'none';
-option7.style.display = 'none';
-option8.style.display = 'none';
-option9.style.display = 'none';
-option10.style.display = 'none';
-option11.style.display = 'none';
-option12.style.display = 'none';
-option13.style.display = 'none';
-option14.style.display = 'none';
-option15.style.display = 'none';
-option16.style.display = 'none';
-option17.style.display = 'none';
+option2.style.display = 'initial';
+option3.style.display = 'initial';
      
 });}
 acceptMission();
@@ -635,6 +658,20 @@ standGround();
 
 
 // this function activates the reset button
+
+
+
+function reset() { 
+    
+    option18.addEventListener('click', () => {       
+      window.location.reload()
+
+})}
+reset();
+
+
+
+
 
 // onClick="window.location.reload();
 
