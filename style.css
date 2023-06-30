@@ -54,7 +54,8 @@ body{
 
  .resetBtn{
     border-radius: 200px;
-    display: block;
+    margin-left: auto;
+    margin-right: auto;
     position: absolute;
     background-color: red;
     bottom: 30px;
