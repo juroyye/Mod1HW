@@ -70,10 +70,13 @@ Accept Mission:
 
                         As the cannon of Lord Scarr's ship heats up and the bolt is nearly fired, a shimmer of light flashes through space. His ship instantly shuts off. A laser bolt that appears as lightning strikes through his ship, causing it to instantly explode in a fiery ball. Your forces have arrived. They board your ship and secure the tesseract from you. "Congratulations pilot, you have saved the universe."
 
+            Respond to an SOS call in your sector:
 
+               It was a trap sent up by Lord Scarr. The tesseract is taken.
 
     2b. Send out an SOS signal and wait:
-
+ 
+ Ping your location and you surrender.
 
      
        
@@ -170,3 +173,10 @@ Accept Mission:
         //  document.getElementById("btn7").innerHTML = 
         //  ``
    
+
+
+option7.style.display = 'initial';
+option8.style.display = 'initial';
+
+option7.style.display = 'none';
+option8.style.display = 'none';
