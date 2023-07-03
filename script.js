@@ -119,7 +119,7 @@ function acceptMission() {
      could supposedly bring you closer to Fusille. However, you 
      can also see on your radar that emergency space fighters have
      been deployed and are rapidly advancing. There's a nearby
-     asteroid field that might grant protection... \n Now having limited time, you are faced with a critical 
+     asteroid field that might grant protection... Now having limited time, you are faced with a critical 
      decision:`;
 
  
@@ -501,16 +501,27 @@ function nextHypergate() {
       // alter the master text
        document.getElementById("masterText").innerHTML = 
   
-       `You narrowly make into the next hypergate.`;
+       `You push the throttle and manuever your vessel towards the gate. Fleeing to the 
+       planet can only get you so far; if you get caught on the planet then escape is
+       practically impossible. The ship buckles and churns as you approach. The rings,
+       covered in space amoeba and intergalactic sludge, barely rotate as you enter.
+       After a deep breath and a prayer, you advance the throttle and are instantly 
+       jolted into hyperspace. The vessel rocks back and forth, your dashboard cluttered
+       with the detections of star systems and celestial bodies. Moments later, you're
+       spit out into the deep of space once again. Instantly, the first alert to overtake
+       your HUD is an SOS signal a few hundred miles away. It's definitely close enough for you
+       to investigate. After all, it's against Intergalactic Law to ignore a person in distress.
+        However, there's a police envoy nearby that might escort you safely to Fusille where you can
+       ensure the tesseract is disposed of. Handling the SOS shouldn't take long, but is it more
+       important than the tesseract?...`;
 
    
        // alter the buttons
        document.getElementById("btn12").innerHTML = 
-       `Reach out to a nearby police envoy for help 
-       and protection as you go back to Fusille`
+       `REACH OUT TO THE POLICE ENVOY FOR HELP AND PROTECTION AS YOU TRAVEL TO FUSILLE`
   
        document.getElementById("btn13").innerHTML = 
-       `Respond to an SOS call in your sector`
+       `RESPOND TO THE SOS CALL IN YOUR SECTOR`
      
 
        option12.style.display = 'initial';
@@ -531,16 +542,26 @@ function nextHypergate() {
           // alter the master text
            document.getElementById("masterText").innerHTML = 
       
-           `The police offer protection. Lord Scarr arrives 
-           and attacks.`;
+           `Breaking intergalactic law in the scope of saving the universe is acceptable, you reckon.
+           Clutching the comms, you instantly make contact with the policing craft and 
+           inform them of your situation. Immediately, they rally to your aid and offer to escort
+           you through a nearby hypergate that would land you in the same star system as Fusille.
+           Before you're able to express thanks, a blinding light flashes in your cockpit, and your 
+           radar completely deadens. No less than thirty of Lord Scarr's ships warp in, instantly 
+           destroying two police craft idling nearby. The police spring to action, firing back at the
+           incoming ambushees. Bolts fly in every direction, and explosions begin to litter the once
+           calm spacefront. The hypergate isn't too far, nor is it too close. You're tired of running.
+           Now might be your time to make your stand. If you make it to the gate, Scarr will definitely
+           be in pursuit. You don't want to run, but staying and fighting might be exactly what Scarr wants you
+           to do...`;
       
        
            // alter the buttons
            document.getElementById("btn14").innerHTML = 
-           `Fight Scarr and his forces`
+           `FIGHT SCARR AND HIS FORCES`
       
            document.getElementById("btn15").innerHTML = 
-           `Run and escape through another hypergate`
+           `RUN AND ESCAPE THROUGH ANOTHER HYPERGATE`
 
 
            option12.style.display = 'none';
@@ -588,7 +609,20 @@ function fightScarr() {
           // alter the master text
            document.getElementById("masterText").innerHTML = 
       
-           `You engage in combat with Scarr, but get shot down.`
+           `Now is not the time to retreat. It will never end if you run now.
+           This is your best chance at defending the universe, and if you flee you'll just
+           be hunted down. You tug two switches located at the end of the dash, engaging
+           combat procedures. Two energy miniguns deploy from the bottom of the craft, and
+           the targeting systems come to life. You immediately notice that one 
+           of Scarr's grunts has taken aim at the main police vessel, and you set off
+           to intercept. Pushing the throttle harder than you ever have before and pulling 
+           the trigger, you feel the miniguns rumble as they pre-fire at the estimated 
+           coordinates of the enemy craft. Three direct hits, and the enemy ship immediately explodes 
+           into a fiery ball. Relieved, you slow the ship down in search of the next target.
+           Before you see it, however, Scarr's ship itself scorches past you, deploying a 
+           space mine that immediately clings to the bottom of your ship. Before you have time 
+           to react, it detonates. You and your vessel are erased forever.
+           `
       
             // MAKE OPTIONS DISAPPEAR
 
@@ -608,22 +642,29 @@ function runFromScarr() {
               // alter the master text
                document.getElementById("masterText").innerHTML = 
           
-               ` You try to flee and manage to escape through
-                a hyper gate. Upon leaving the gate and AFTER
-                 sending an SOS, your ship goes dead silent. 
-                 Everything is dead, you're in pitch black 
-                 space. One of Scarr's ships follows you 
-                 through the portal. About to destroy you
-                  and salvage the tesseract, you're faced
-                with a decision.`;
+               ` THe police are heavily overpowered and severely outgunned.
+               Fighting now would be handing the tesseract over. The ship startles 
+               to life as you set off for the gate, dodging multiple explosions and searing energy 
+               shards that are cast through through the battlefield. An enemy attempts to intercept 
+               you, but is hastily shot down by a police crusader. You perform barrel roll after 
+               barrel roll, tilting your wings to avoid debris and swirling to avoid thermal 
+               missiles fired with you as the target. Your luck expires, however, and while you are 
+               in proximity of the hypergate, you are struck by a bolt through the right wing. 
+               Your ship spirals as you struggle to regain control, in which you nearly collide
+               with a cracked in half police vessel. Upon activating the auxiliary thrusters, you 
+               stabilize the vessel and jettison to the gate. Rumbling through, you immediately shut the
+               lights off to conserve power and plot your next move. Almost instantly after,
+               Lord Scarr follows through with his cannons already charged. His groggy and distorted 
+               voice comes across your comms with a chilling yet simple message. "Pass the tesseract."
+               Once again, you're faced with a critical decision that will affect trillions of lives.`;
           
            
                // alter the buttons
                document.getElementById("btn16").innerHTML = 
-               `Surrender`
+               `SURRENDER`
           
                document.getElementById("btn17").innerHTML = 
-               `Stand ground and face consequences`
+               `STAND GROUND AND FACE CONSEQUENCES`
              
                
             option14.style.display = 'none';
@@ -645,12 +686,8 @@ runFromScarr();
                   // alter the master text
                    document.getElementById("masterText").innerHTML = 
               
-                   ` They board ship, tie you up, take tesseract
-                    and leave through gate. Moments later, your 
-                    forces of good arrive. You tell them you gave
-                     the tesseract up. The entire team breaks out 
-                     into a frenzy of emotions. The universe is
-                    doomed.`
+                   ` You did all you could. You turn your ship off, and allow an energy
+                   net to be cast over your vessel.`
               
                     // MAKE OPTIONS DISAPPEAR
                     option16.style.display = 'none';
