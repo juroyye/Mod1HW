@@ -84,3 +84,8 @@ option8.style.display = 'initial';
 
 option7.style.display = 'none';
 option8.style.display = 'none';
+
+
+// const Scarr = new LordScarr(true, "Scavenger", "cannons", "red", "Krishna");
+
+//  const You = new Pilot("6'2", 29, Retriever, "Human", "Earth");

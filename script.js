@@ -1,3 +1,4 @@
+// this is the class of Pilot, instantiation at bottom
 class Pilot {
     constructor(height, age, shipName, race, homePlanet) {
         this.height = height;
@@ -8,7 +9,7 @@ class Pilot {
     }
 };
 
-
+// this is the class of LordScarr, instantiation at bottom
 class LordScarr {
     constructor(isEvil, shipName, mainWeapon, armorColor, homePlanet) {   
         this.isEvil = true;
@@ -474,8 +475,16 @@ function sendSos1() {
           // alter the master text
            document.getElementById("masterText").innerHTML = 
       
-        `You send an sos signal, but a scavenger robot spots you 
-           and snitches. You surrender`
+        `You send an SOS signal, and relax off of the throttle. As
+        your engine slows down, you recognize a scavenger robot 
+        nearby. It boops along, retrieving metal strewn across space.
+        You shut your lights off, in hopes that it won't spot you.
+        As the lights turn off, your ship flashes a signal that traverses through space
+        and glares off the robot's sensors. It immediately fixates on you.
+         The robot sounds an alarm, and Scarr and his forces 
+        arrive nearly instantly. An energy net is cast over you, and
+        after a few minutes of struggle, you have no choice but to 
+        surrender.`
       
            option7.style.display = 'none';
            option8.style.display = 'none';
@@ -585,9 +594,11 @@ function sendSos3() {
       // alter the master text
        document.getElementById("masterText").innerHTML = 
   
-       `You arrive at the SOS but nobody is there. Lord Scarr
-        and his minions tricked you, and as a result, they come and
-         make you surrender.`;
+       `You arrive at the SOS but there is no ship in sight. All
+       you see is barren space, and you get a bad feeling in your
+       stomach. Scarr's fleet arrives, and you realize that its a trap.
+       Scarr's ship casts an energy net, and you have no choice but to 
+       surrender.`;
       
 
          option12.style.display = 'none';
@@ -633,7 +644,7 @@ function fightScarr() {
         fightScarr();
 
 
-
+// this function goes into the run from Scarr option (LOSS)
 function runFromScarr() { 
     
             option15.addEventListener('click', () => {       
@@ -677,7 +688,7 @@ runFromScarr();
 
 
 
-
+// this function goes into the surrender option (LOSS)
  function surrender() { 
     
                 option16.addEventListener('click', () => {       
@@ -687,7 +698,9 @@ runFromScarr();
                    document.getElementById("masterText").innerHTML = 
               
                    ` You did all you could. You turn your ship off, and allow an energy
-                   net to be cast over your vessel.`
+                   net to be cast over your vessel. Scarr's ship links to your vessel,
+                   and he boards. You are tied up, and the tesseract is taken from your ship. 
+                   You have failed.`
               
                     // MAKE OPTIONS DISAPPEAR
                     option16.style.display = 'none';
@@ -697,7 +710,7 @@ runFromScarr();
             
 
   
-
+// this function goes into the stand ground option (WIN)
  function standGround() { 
     
     option17.addEventListener('click', () => {       
@@ -706,14 +719,14 @@ runFromScarr();
       // alter the master text
        document.getElementById("masterText").innerHTML = 
   
-       ` As the cannon of Lord Scarr's ship heats up and 
-       the bolt is nearly fired, a shimmer of light flashes
-        through space. His ship instantly shuts off. A laser
-         bolt that appears as lightning strikes through his
-          ship, causing it to instantly explode in a fiery
-           ball. Your forces have arrived. They board your
-            ship and secure the tesseract from you.
-        "Congratulations pilot, you saved the universe.`
+       ` You'd rather die than give into evil. You made it this far. Surrendering
+       is not an option. "You've made your decision", Scarr crackles across once again.
+       You close your eyes as Scarr's cannons charge up, fully aware of what is to come next.
+       Running isn't an option; your wing is far too damaged. Seconds before the bolt is fired,
+       a flash of light overtakes your viewport. A laser bolt like lightning cracks across, destroying 
+       Scarr's ship with it exploding into a fiery ball. Your own fleet arrives, linking to your
+       ship and boarding. Your star commander steps on board as soldiers rush, taking the tesseract back
+       aboard their own home ship. Congratulations, he states, "You have saved the universe."`
   
         // MAKE OPTIONS DISAPPEAR
 
@@ -738,8 +751,13 @@ function reset() {
 })}
 reset();
 
+// instantiations of the classes
+const Scarr = new LordScarr(true, "Scavenger", "cannons", "red", "Krishna");
 
+const You = new Pilot("6'2", 29, Retriever, "Human", "Earth");
 
+console.log(Scarr);
+console.log(You);
 
 
 // onClick="window.location.reload();
